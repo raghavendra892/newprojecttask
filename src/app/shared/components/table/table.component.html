@@ -1,0 +1,29 @@
+
+<div>
+    <button mat-raised-button (click)="OpenDialogBox()" color="primary">+ Apply Leave</button>
+</div>
+
+<table class="table table-borderd" >
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Company</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of newArray">
+            <td>{{emp.name}}</td>
+            <td>{{emp.username}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.age}}</td>
+            <td *ngIf="emp.company.name">{{emp.company.name}}</td>
+            <!-- <td *ngIf="!emp.company.name">{{emp.name}}</td> -->
+            <td *ngIf="emp.address.street">{{emp.address.street}}</td>
+            <!-- <td *ngIf="!emp.address.street">{{emp.address}}</td> -->
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 1,
+    "EmployeeName": "Raghuveer",
+    "Username": "Bret",
+    "Email": "Sincere@april.biz",
+    "Age": 25,
+    "Company​" : "Usd 50",
+    "Address": "Payment Details"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,82 @@
+<mat-dialog-content>
+    <form [formGroup]="LeaveForm" (ngSubmit)="onSubmit()">
+        <!-- <div class="row">
+            <div class="col-sm-10 col-10">
+                <h2>Leave Details</h2>
+            </div>
+            <div class="col-sm-2 col-2">
+                <mat-icon (click)="closedDialog()">close</mat-icon>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <mat-form-field color="accent" class="date-form">
+                    <mat-label>From</mat-label>
+                    <input matInput [matDatepicker]="picker1" formControlName="startDate" />
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field color="accent" class="date-form">
+                    <mat-label>To</mat-label>
+
+                    <input matInput [matDatepicker]="picker2" formControlName="EndDate" />
+
+
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Reason</mat-label>
+                <textarea matInput formControlName="reason"></textarea>
+            </mat-form-field>
+        </div> -->
+        <div class="row">
+            <div class="col-sm-3">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            
+        </div>
+        <div class="text-right">
+            <button mat-raised-button type="button" class="mr-4" color="basic" routerLink="/staff"
+                (click)="closedDialog()">close</button>
+            <button mat-raised-button color="primary" type="submit" routerLink="/staff"
+                (click)="closedDialog()">Submit</button>
+        </div>
+        <br>
+    </form>
+
+</mat-dialog-content>
